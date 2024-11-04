@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    position: relative;
+    background-color: #ece0d1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*navegador*/
+
+.navegador
+{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    align-items: center;
+    color:white;
+}
+
+.navegador.visible
+{
+    background-color: #24160a;
+    box-shadow: 25px 0 25px rgb(29, 29, 29);
+    position: fixed;
+    z-index: 3000;
+    animation: scrollDown .2s ease-out;
+}
+
+@keyframes scrollDown {
+    0%
+    {
+        top:-100px;
+        opacity: 0;
+    }
+    100%
+    {
+        top:0;
+    }
+}
+
+.botonesLogo
+{
+    display: flex;
+    gap: 50px;
+    display: none;
+    
+}
+.botonesLogo li
+{
+    list-style: none;
+    font-size: 20px;
+    transition: .05s ease-in-out;
+}
+
+.botonesLogo li:hover
+{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.navegador img
+{
+    width: 50px;
+    display: block;
+    filter:invert(1)
+}
+.navegador img:hover
+{
+    cursor: pointer;
+}
+
+/*apartado principal*/
+.principal
+{
+    position: relative;
+
+}
+.contenedorVideoPrincipal
+{
+    width: 96vw;
+    overflow-x: hidden;
+    height: 80vh;
+
+}
+
+.contenedorVideoPrincipal video
+{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(.5);
+    position: absolute;
+}
+
+.contenedorPrincipalInfo
+{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30%;
+    height: fit-content;
+    z-index: 1500;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    display: flex;
+}
+
+.contenedorPrincipalInfo h1
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+.contenedorPrincipalInfo p
+{
+    font-size: 24px;
+}
+
+.contenedorPrincipalInfo button
+{
+    background-color: black;
+    color:white;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 16px;
+    border-style: none;
+    align-self: center;
+    border: 1px solid white
+}
+.contenedorPrincipalInfo button:hover
+{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.contenedorImagenesCafe
+{
+
+    position: relative;
+    background-color: #ece0d1;
+    z-index: 2000;
+    display: flex;
+    gap: 13vw;
+    padding: 2vw 5vw;
+}
+.contenedorImagenesCafe img
+{
+    width: 12vw;
+    filter: invert(46%) sepia(20%) saturate(671%) hue-rotate(342deg) brightness(70%) contrast(90%);
+}
+
+.contenedorProductos
+{
+    background-color: white;
+    width: 95%;
+    height: 50vh;
+    align-self: center;
+}
+
+/*Contenedor Proposal*/
+.contenedorProposal
+{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color:#ece0d1;
+}
+.contenedorProposal img
+{
+    width:35%;
+    height: 20vh;
+
+}
+
+
+.contenedorProposal div
+{
+    width: 35%;
+
+    padding-top: 15px;
+    font-size: 12px;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.contenedorProposal div button
+{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-style: none;
+    background-color:#967259;
+    color:white;
+    transition: .05s ease-in-out;
+    position: relative;
+    z-index: 500;
+}
+
+.contenedorProposal div button:hover
+{
+    cursor: pointer;
+    scale:1.1;
+}
+
+
+
+
+/*sobre nosotros*/
+.contenedorSobreNosotros
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    width: 90%;
+    background-color: white;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: fit-content;
+    gap: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5vh;
+}
+
+.contenedorSobreNosotrosAll
+{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+.contenedorSobreNosotros div div
+{
+    width: fit-content;
+    display: flex;
+}
+.contenedorSobreNosotros div div span
+{
+    width: 80vw;
+    height: 45vh;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorSobreNosotros div div span img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter:brightness(.4);
+    border-radius: 45px;
+    -webkit-user-drag: none;
+}
+.contenedorSobreNosotros div div span img:hover
+{
+    cursor:grab;
+}
+.contenedorSobreNosotros div div span p
+{
+    position: relative;
+    z-index: 2;
+    color:white;
+    padding-left: 10px;
+    width: 90%;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 20px;
+
+}
+.contenedorSobreNosotros div div span p:hover
+{
+    cursor: grab;
+}
+.flechaRight,.flechaLeft
+{
+    width: 50px;
+    height: 50px;
+}
+/*media queries*/
+@media screen and (min-width: 1000px) {
+
+
+    .contenedorPrincipalInfo
+    {
+
+        margin-top: 30vh;
+    }
+
+    .contenedorImagenesCafe
+    {
+        padding: 2vh 20vw;
+    }
+    .contenedorImagenesCafe img
+    {
+        width: 7vw;
+    }
+
+    .navegador img
+    {
+        display: none;
+    }
+
+
+    .botonesLogo
+    {
+        display: flex;
+        gap: 10vw;
+    }
+
+    /*contenedorProposal*/
+    .contenedorProposal
+    {
+        padding-left:20px;
+    }
+    .contenedorProposal img
+    {
+        width: 20vw;
+        height: 40vh;
+    }
+    .contenedorProposal div 
+    {
+        width: 55vw;
+        height:40vh ;
+        gap: 50px;
+    }
+    .contenedorProposal div h1
+    {
+        font-size: 30px;
+    }
+    .contenedorProposal div button
+    {
+        height: 45px;
+        width: 225px;
+        font-size: 18px;
+    }
+    /*sobre nosotros*/
+    .contenedorSobreNosotros div div span
+    {
+        height: 80vh;
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
