@@ -168,9 +168,31 @@ body
 {
     background-color: white;
     width: 95%;
-    height: 50vh;
+    height: fit-content;
     align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh 0;
 }
+
+.card
+{
+    width: 40%;
+    height: 25vh;
+    border-radius: 35px;
+    background-color:#ece0d1;
+    transition: .1s ease-in-out;
+}
+.card:hover
+{
+    position: relative;
+    top:-10px
+}
+
 
 /*Contenedor Proposal*/
 .contenedorProposal
@@ -304,23 +326,42 @@ body
     width: 50px;
     height: 50px;
 }
+
+
+/*Footer*/
+footer
+{
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+    background-color: #24160a;
+}
+
+
+
 /*media queries*/
 @media screen and (min-width: 1000px) {
 
+    .contenedorVideoPrincipal video
+    {
+        height: 90vh;
+    }
+    
 
     .contenedorPrincipalInfo
     {
-
         margin-top: 30vh;
+        height: 90vh;
     }
 
     .contenedorImagenesCafe
     {
         padding: 2vh 20vw;
+        position: relative;
     }
     .contenedorImagenesCafe img
     {
-        width: 7vw;
+        width: 5.5vw;
     }
 
     .navegador img
