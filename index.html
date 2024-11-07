@@ -19,7 +19,7 @@
     </nav>
     <section class="principal">
         <div class="contenedorVideoPrincipal">
-            <video src="src/videos/videoPrincipal.mp4" autoplay loop>
+            <video preload="auto" src="src/videos/videoPrincipal.mp4" autoplay loop>
             </video>
             <div class="contenedorPrincipalInfo">
                 <h1>
@@ -37,22 +37,20 @@
         </div>
     </section>
 
-    <section class="contenedorImagenesCafe">
-        <img src="src/cup-of-drink.png" alt="">
-        <img src="src/coffee.png" alt="">
-        <img src="src/beans.png" alt="">
-        <img src="src/coffee-beans.png" alt="">
+    <section class="contenedorProductos">
+        <h2>Nuestros Productos</h2>
+        <div class="angry-grid">
+            <div id="item-0"><img src="src/productos/1.jpeg" alt=""></div>
+            <div id="item-1"><img src="src/productos/2.jpeg" alt=""></div>
+            <div id="item-2"><img src="src/productos/3.jpeg" alt=""></div>
+            <div id="item-3"><img src="src/productos/4.jpeg" alt=""></div>
+            <div id="item-4"><img src="src/productos/5.jpeg" alt=""></div>
+            <div id="item-5"><img src="src/productos/6.jpg" alt=""></div>
+        </div>
+        <button>Visitar</button>
     </section>
 
-    <section class="contenedorProductos">
-        <div class="card">
-        </div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </section>
+
 
     <section class="contenedorProposal">
         <img src="src/11243677.png" alt="">
@@ -62,44 +60,80 @@
         <img class="contenedorProposalImg2" src="src/11354820.png" alt="">
     </section>
 
-    <section class="contenedorSobreNosotros">
-        <h1>Sobre Nosotros</h1>
-        <div class="contenedorSobreNosotrosAll">
-            <div>
-                <span>
-                    <img src="src/caficultores.jpg" alt="">
-                    <p>
-                        La Asociación de Caficultores de Jarabacoa reúne 
-                        a productores locales comprometidos con la calidad 
-                        y sostenibilidad. Nuestro café refleja la riqueza de
-                         las montañas dominicanas y el esfuerzo de cada miembro.
-                    </p>
-                </span>
-                <span>
-                    <img src="src/caficultores2.jpeg" alt="">
-                    <p>
-                        Desde nuestra fundación, apoyamos a los caficultores 
-                        con capacitación y recursos para mejorar sus técnicas
-                         y fortalecer sus comunidades. 
-                        Creemos en un comercio justo que beneficie a todos.
-                    </p>
-                </span>
-                <span>
-                    <img src="src/caficultores3.jpeg" alt="">
-                    <p>
-                        Al disfrutar nuestro café, estás apoyando a una 
-                        red de productores dedicados y contribuyendo al 
-                        desarrollo sostenible de Jarabacoa.
-                    </p>
-                </span>
+    <section class="contenedorSobreNosotrosPadre">
+        <div class="contenedorSobreNosotros">
+            <h1>Sobre Nosotros</h1>
+            <div class="contenedorSobreNosotrosAll">
+                <div>
+                    <span>
+                        <img src="src/caficultores.jpg" alt="">
+                        <p>
+                            La Asociación de Caficultores de Jarabacoa reúne 
+                            a productores locales comprometidos con la calidad 
+                            y sostenibilidad. Nuestro café refleja la riqueza de
+                             las montañas dominicanas y el esfuerzo de cada miembro.
+                        </p>
+                    </span>
+                    <span>
+                        <img src="src/caficultores2.jpeg" alt="">
+                        <p>
+                            Desde nuestra fundación, apoyamos a los caficultores 
+                            con capacitación y recursos para mejorar sus técnicas
+                             y fortalecer sus comunidades. 
+                            Creemos en un comercio justo que beneficie a todos.
+                        </p>
+                    </span>
+                    <span>
+                        <img src="src/caficultores3.jpeg" alt="">
+                        <p>
+                            Al disfrutar nuestro café, estás apoyando a una 
+                            red de productores dedicados y contribuyendo al 
+                            desarrollo sostenible de Jarabacoa.
+                        </p>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <section class="contenedorImagenesCafe">
+        <img src="src/cup-of-drink.png" alt="">
+        <img src="src/coffee.png" alt="">
+        <img src="src/beans.png" alt="">
+        <img src="src/coffee-beans.png" alt="">
+    </section>
+
+
     <footer>
         <div class="contenedorFooter">
-            <div class="contenedorFooterItem"></div>
-            <div class="contenedorFooterItem"></div>
-            <div class="contenedorFooterItem"></div>
+            <div class="contenedorFooterItem">
+                <h2>Navegador</h2>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Newsletter</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="contenedorFooterItem">
+                <h2>Redes</h2>
+                <span>
+                    <img src="src/redes/facebook.png" alt="">
+                    <img src="src/redes/whatsapp.png" alt="">
+                    <img src="src/redes/ig.png" alt="">
+                </span>
+            </div>
+            <div class="contenedorFooterItem">
+                <h2>Newsletter</h2>
+                <form>
+                    <input type='text' placeholder="nombre">
+                    <input type="email" placeholder="correo">
+                    <input type="tel" placeholder="telefono">
+                    <button  type="submit">Enviar</button>
+                </form>
+
+            </div>
         </div>
     </footer>
 </body>
