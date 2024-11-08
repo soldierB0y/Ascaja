@@ -8,16 +8,20 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 
+
 }
+
 
 
 body
 {
     position: relative;
     display: flex;
+    width: 100dvw;
     flex-direction: column;
 
 }
+
 
 /*navegador*/
 
@@ -29,7 +33,7 @@ body
     padding: 25px 10px;
     position: absolute;
     z-index: 1000;
-    width: 100vw;
+    width: 100dvw;
     align-items: center;
     color:white;
 }
@@ -95,7 +99,7 @@ body
 }
 .contenedorVideoPrincipal
 {
-    width: 96vw;
+    width: 96dvw;
     overflow: hidden;
     height:90vh;
 
@@ -103,12 +107,13 @@ body
 
 .contenedorVideoPrincipal video
 {
-    width: 100%;
+    width: 100dvw;
     height: 100vh;
     object-fit: cover;
     filter: brightness(.25);
     position: fixed;
     z-index: -2000;
+    max-width: 100vw;
 }
 
 .contenedorPrincipalInfo
@@ -162,12 +167,12 @@ body
     background-color: #ece0d1;
     z-index: 2000;
     display: flex;
-    gap: 13vw;
-    padding: 2vw 5vw;
+    gap: 13dvw;
+    padding: 2dvw 5dvw;
 }
 .contenedorImagenesCafe img
 {
-    width: 12vw;
+    width: 12dvw;
     filter: invert(46%) sepia(20%) saturate(671%) hue-rotate(342deg) brightness(70%) contrast(90%);
 }
 
@@ -176,7 +181,7 @@ body
 {
     width: 100%;
     height: fit-content;
-    padding: 15vh 2vw;
+    padding: 15vh 2dvw;
     padding-bottom: 30vh;
     background-color: white;
     text-align: center;
@@ -360,7 +365,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5vw 0;
+    padding: 5dvw 0;
     background-color: white;
 }
 
@@ -374,7 +379,7 @@ body
     justify-content: center;
     padding-top: 30px;
     width: fit-content;
-    padding: 5vw 8vw;
+    padding: 5dvw 8dvw;
     background-color: white;
     align-self: center;
     border-radius: 100px;
@@ -389,7 +394,7 @@ body
 {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 80dvw;
     max-width: 800px;
     padding-bottom: 10px;
     flex-wrap: nowrap;
@@ -451,7 +456,7 @@ body
 }
 .contenedorSobreNosotros div div span
 {
-    width: 80vw;
+    width: 80dvw;
     max-width: 800px;
     height: 45vh;
     object-fit: cover;
@@ -516,7 +521,7 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10vw 0;
+    padding: 10dvw 0;
     justify-content: space-around;
     padding: 50px 0;
 
@@ -525,7 +530,7 @@ footer
 
 .contenedorFooterItem
 {
-    width: 80vw;
+    width: 80dvw;
     height: fit-content;
     min-height: 20vh;
     display: flex;
@@ -545,7 +550,7 @@ footer
 
 .contenedorFooterItem form input
 {
-    width: 60vw;
+    width: 60dvw;
     height: 40px;
     text-align: center;
     border-radius: 8px;
@@ -556,7 +561,7 @@ footer
 
 .contenedorFooterItem form button
 {
-    width: 40vw;
+    width: 40dvw;
     height: 40px;
     border-radius: 8px;
     border-style: none;
@@ -640,12 +645,12 @@ footer
 
     .contenedorImagenesCafe
     {
-        padding: 2vh 20vw;
+        padding: 2vh 20dvw;
         position: relative;
     }
     .contenedorImagenesCafe img
     {
-        width: 5.5vw;
+        width: 5.5dvw;
     }
 
     .navegador img
@@ -657,7 +662,7 @@ footer
     .botonesLogo
     {
         display: flex;
-        gap: 10vw;
+        gap: 10dvw;
     }
 
     /*contenedorProposal*/
@@ -667,12 +672,12 @@ footer
     }
     .contenedorProposal img
     {
-        width: 20vw;
+        width: 20dvw;
         height: 40vh;
     }
     .contenedorProposal div 
     {
-        width: 55vw;
+        width: 55dvw;
         height:40vh ;
         gap: 50px;
     }
@@ -693,8 +698,8 @@ footer
     .contenedorProductos
     {
         height: 100vh;
-        padding-left: 6vw;
-        padding-right: 6vw;
+        padding-left: 6dvw;
+        padding-right: 6dvw;
     }
     .div1
     {
@@ -714,7 +719,7 @@ footer
     }
     .card
     {
-        width: 25vw;
+        width: 25dvw;
         height:55vh;
     }
 
@@ -728,5 +733,9 @@ footer
     .contenedorFooter
     {
         flex-direction: row;
+    }
+    .contenedorFooterItem
+    {
+        min-height:fit-content;
     }
 }
